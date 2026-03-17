@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 400px;
+    /* width: 100vw; */
+    /* min-width: 500px; */
+}
+.main-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: hsl(148, 38%, 91%);
+    padding: 20px;
+}
+.form{
+    background: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;         /* ocupar todo espaço disponível */
+    max-width: 700px;
+}
+.form h1{
+    margin-bottom: 20px;
+}
+.div-input, .div-query, .div-check{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    
+}
+.campo{
+    width: 50%;
+    
+}
+
+.input-text, .input-email, .texto, .opcao-radio{
+    width: 100%;
+    padding: .9em;
+    border: 1px solid ;
+    border-radius: 10px;
+    margin:10px 0 10px;
+    font-size: 1em;
+    resize: none;
+    cursor: pointer;
+    /* overflow: hidden; */
+    outline: none;
+}
+.input-hover:hover,
+.input-email:hover,
+.texto:hover,
+.opcao-radio:hover
+{
+    /* transition: ease-in 0.4s;
+    translate: 1px; */
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+.input-hover:focus,
+.input-email:focus,
+.texto:focus,
+.opcao-radio:active{
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+#check:checked{
+    /* color: hsl(169, 82%, 27%); */
+    accent-color: hsl(169, 82%, 27%);
+}
+.opcao-radio{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.opcao-radio label{
+    /* padding-right: 50%; */
+    /* flex: 1; */
+    cursor: pointer;
+}
+.btn{
+    padding: 10px;
+    background: hsl(169, 82%, 27%);
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid;
+    color: hsl(148, 38%, 91%);
+    font-size: 1em;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:hsl(187, 24%, 22%) ;
+    
+}
+.input-radio:checked{
+    accent-color: hsl(169, 82%, 27%);
+}
+
+.div-check{
+    margin-top: 20px;
+}
+span{
+    color: hsl(169, 82%, 27%);
+}
+.erro-geral, .erro-email, .erro-radio{
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.error-visible{
+    border: red;
+
+}
+.toast {
+  position: fixed;
+  top: 7%;
+  /* right: 50%; */
+  background-color: hsl(187, 24%, 22%);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  font-size: clamp(.7em, 1.5vw, 1.1rem); 
+pointer-events: none;
+}
+
+.toast.show {
+  opacity: 1;
+  pointer-events: auto;
+  
+}
+.toast h2{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+@media (max-width: 600px){
+
+.div-input,
+.div-query{
+    flex-direction: column;
+}
+
+.campo{
+    width: 100%;
+}
+
+.form{
+    padding: 20px;
+}
+.toast {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50%;
+  /* right: 50%; */
+}
+}
+/* exemplo de responsive padding
+padding: min(5em, 8%) 5em é o padding fixo, 8% é o responsivo */
+/* exemplo de responsive font size
+font-size: clamp(1.8rem, 10vw, 5rem); (valor minimo, valor preferencial, valor maximo)
+*/font{
+    font-size: clamp(1.8rem, 10vw, 5rem);
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+<img src="" alt="">
+<body>
+     <div class="main-form">
+        <form action="" class="form">
+        
+            <!-- <h1>Contact Us</h1> -->
+
+            <div class="div-input">
+                <div class="campo campo1">
+                    <p>First Name <span>*</span></p>
+
+                    <input type="text" class="input-text input-hover first-input">
+                    <p class="erro-texto erro-geral"></p>
+                </div>
+                <label class="campo campo2">
+                    <p>Last Name <span>*</span></p>
+                    
+                    <input type="text" class="input-text input-hover second-input">
+                    <p class="erro-texto erro-geral"></p>   
+                </label>
+                
+            </div>
+            <div class="div-email">
+                <p>Email Address <span>*</span></p> 
+                <input class="input-email" id="input-hover">
+                <p class="erro-email"></p>
+            </div>
+            
+
+            <p>Query Type <span>*</span></p>
+            <div class="div-query">
+            
+                <label class="opcao-radio opcao-radio1">
+                    
+                    <input type="radio" name="opcao" id="opcao1" class="input-radio">
+                    General Enquiry
+                </label>
+                
+                <label class="opcao-radio opcao-radio2">
+                    <input type="radio" name="opcao" id="opcao2" class="input-radio" >
+                    Support Request
+                </label>
+            </div>
+            <p class="erro-radio"></p>
+            <!-- Please select a query type -->
+            <div class="div-texto">
+                <p>Message <span>*</span></p>
+                <Textarea class="texto" rows="4" ></Textarea>
+                <p class="erro-texto erro-geral"></p>
+            </div>
+            
+            <!-- This field is required -->
+             <label class="div-check">
+                <input type="checkbox" name="" id="check" >
+               I consent to being contacted by the team <span>*</span>   
+               
+             </label>
+            <p class="erro-texto erro-geral"></p>
+           
+
+            <!-- To submit this form, please consent to being contacted -->
+             <div class="div-btn">
+                <button type="submit" class="btn">Submit</button>
+             </div>
+            
+
+            <!-- Message Sent!
+            Thanks for completing the form. We'll be in touch soon! -->
+        </form>
+        <div id="toast" class="toast">
+            
+            <h2><img src="./assets/images/icon-success-check.svg" alt="">Message Sent!</h2>
+            <p>Thanks for completing the form. We'll be in touch soon!</p>
+
+        </div>
+    </div>
+    <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+</body>
+<script src="script.js"></script>
+</html>

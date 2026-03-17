@@ -8,6 +8,7 @@
 body{
     min-height: 100vh;
     min-width: 400px;
+    
     /* width: 100vw; */
     /* min-width: 500px; */
 }
@@ -124,7 +125,7 @@ span{
   padding: 15px 25px;
   border-radius: 8px;
   opacity: 0;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: opacity 0.4s ease;
   font-size: clamp(.7em, 1.5vw, 1.1rem); 
 pointer-events: none;
 }
